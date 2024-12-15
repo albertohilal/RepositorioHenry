@@ -3,11 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
     <title>Mi Primer Sitio Web</title>
   </head>
   <body>
     <!-- Contenido de la página va aquí-->
+     <div class="contenedor"></div>
     <header>
+
       <h1>Esto es el título</h1>
       <span>ENLACE 1</span>
       <span>ENLACE 2</span>
@@ -15,7 +18,10 @@
     </header>
     <main>
       <section>
+        <div class="articulos">
+
         <article>
+          
           <h2>Sección Noticias</h2>
           <div>
             <h3>Noticia numero 1</h3>
@@ -49,20 +55,21 @@
             </p>
           </div>
         </article>
+      </div>
       </section>
 
       <section>
         <h2>Seccion Contacto</h2>
-        <form>
-          <div>
+        <form class="formulario">
+          <div class="campo">
             <label for="name">Nombre:</label>
             <input type="text" id="name" name="name" required />
           </div>
-          <div>
+          <div class="campo">
             <label for="email">Correo electrónico:</label>
             <input type="email" id="email" name="email" required />
           </div>
-          <div>
+          <div class="campo">
             <label for="message">Mensaje:</label>
             <textarea id="message" name="message" rows="4" required></textarea>
           </div>
@@ -74,5 +81,6 @@
     <footer>
       <p>Esto es el footer</p>
     </footer>
+  </div>
   </body>
 </html>

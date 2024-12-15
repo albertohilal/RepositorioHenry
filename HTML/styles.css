@@ -1,0 +1,99 @@
+  body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background: #f7f9fc;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #0056b3;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header span {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+header span:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #0056b3;
+}
+
+article {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    width: 300px;
+}
+
+form {
+    padding: 20px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+button {
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+footer {
+    background: #333333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.contenedor{
+    width: 1000px;
+}
+
+.articulos {
+    display: flex; /* Activa Flexbox */
+    justify-content: space-between; /* Espacio igual entre los artículos */
+    gap: 20px; /* Añade espacio entre los artículos */
+    flex-wrap: nowrap; /* Asegura que todos los artículos estén en una sola línea */
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column; /* Coloca todos los campos uno debajo del otro */
+    gap: 20px; /* Espaciado entre los campos */
+    background: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
