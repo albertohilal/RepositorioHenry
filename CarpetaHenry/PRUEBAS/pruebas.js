@@ -1,17 +1,17 @@
-function doWhile(num) {
-  // Aumenta el valor de "num" recibido en 5 hasta un límite de 8 veces.
-  // Retorna el valor final.
-  // PISTA: Utiliza el bucle do-while.
-  // Tu código:
-  let i = 0;
+//var array = ["Juan", "Vivi", "Nacho", "Kari"];
+var array = [1, 8, 24, 36];
 
-  do {
-    i = i + 5;
-    num = num + i;
-    i++;
-    console.log("1: ", num);
-  } while (i <= 8);
-  console.log("2: ", num);
+function duplicarElementos(array) {
+  // Duplica (multiplica x2) cada elemento del array de números.
+  // Devuelve un array con los duplicados.
+  // Tu código:
+  let duplicados = [];
+  for (var i = 0; i < array.length; i++) {
+    if (typeof array[i] === "number") {
+      duplicados.push(array[i] * 2);
+    }
+  }
+  return duplicados; // Devolvemos el nuevo array
 }
 
-doWhile(2);
+console.log(duplicarElementos(array));
